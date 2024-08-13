@@ -1,0 +1,205 @@
+/* General Reset and Layout Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../assets/images/backgroudImage.jpg");
+}
+
+.dashboard-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #4A235A;
+    color: #fefbff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    mix-blend-mode: normal;
+    margin-left: -8px;
+    width: 164px;
+    background-color: #4A235A;
+    border-radius: 95px;
+    margin-top: -8px;
+}
+
+header h2 {
+    margin: 0;
+}
+
+header nav {
+    margin-left: auto;
+}
+
+header a {
+    text-decoration: none;
+    color: #fefbff;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    /* height: calc(100vh - 48px); */
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #4A235A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    color: white;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar-header h3 {
+    margin: 0;
+}
+
+.sidebar-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    height: 100vh;
+}
+
+.sidebar-menu a {
+    text-decoration: none;
+    color: #fefbff;
+    margin: 10px 0;
+    text-align: center;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-menu button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    background-color: white;
+    border: 2px solid #fdfcfd;
+    border-radius: 24px;
+    color: #4A235A;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.sidebar-menu button:hover {
+    background-color: #4A235A;
+    color: white;
+}
+
+.sidebar-menu i {
+    margin-right: 10px;
+}
+
+.sidebar-header img {
+    height: 128px;
+    border-radius: 83px;
+
+}
+
+.chatbot {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.chatbot p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.chatbot-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #fcfbfb;
+    border: none;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chatbot-btn:hover {
+    background-color: #575757;
+}
+
+.dashboard {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.content {
+    padding: 20px;
+}
+
+/* Dashboard Cards Styles */
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    color: #4A235A;
+}
+
+.card p {
+    color: #555555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4A235A;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}

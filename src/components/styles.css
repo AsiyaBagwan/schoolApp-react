@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f0f0;
+  background-image: url("../assets/images/backgroudImage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.studentlist {
+  text-align: center;
+  
+  color: #4a235a;
+
+
+}
+.h2class {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4a235a;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.form-container {
+  width: 80%;
+  max-width: 400px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 5px solid #4a235a;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 2px solid #4a235a;
+}
+
+.form-group input[type="submit"] {
+  background-color: rgb(74, 35, 90);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease 0s;
+  margin-top: 20px;
+}
+.form-btn input[type="submit"] {
+  background-color: rgb(74, 35, 90);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease 0s;
+  margin-top: 20px;
+  margin-left: 38%;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: #3e1d4e;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.back-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  /* margin-left: 28rem; */
+}
+
+.back-link a {
+  text-decoration: none;
+  color: #4a235a;
+  font-weight: bold;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 770px;
+  margin: 20px auto;
+  /* margin-left: 35%; */
+}
+
+table,
+th,
+td {
+  border: 1px solid #4a235a;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  color: #4a235a;
+}
+
+th {
+  background-color: #4a235a;
+  color: #e6dfdf;
+  border-radius: 2px 2px 0 0;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  /* margin-left: 28rem; */
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #ddd;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.centerItem {
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  width: 256px;
+  border: 5px solid #4a235a;
+  border-radius: 16px;
+  color: #4a235a;
+  display: flex;
+  padding: 20px;
+}
+
+.centerItem ul {
+  align-items: center;
+}
+
+.centerItem span {
+  text-align: right;
+}
+
+/* Filter Container Styles */
+.filter-container {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-left: 40%; */
+}
+
+.student-Filter,
+.class-filter {
+  margin-right: 10px;
+  padding: 10px;
+  border: 3px solid #4a235a;
+  border-radius: 24px;
+  font-size: 16px;
+  width: 200px;
+  /* margin-left: 40%; */
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #4a235a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.clear-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#teacherFilter {
+  margin-right: 10px;
+  padding: 10px;
+  border: 3px solid #4a235a;
+  border-radius: 24px;
+  font-size: 16px;
+  width: 200px;
+}
+
+.content {
+  padding: 20px;
+}
+.content-studentList {
+  margin-left: 20%;
+}
+.container-TeacherList {
+  margin-left: 20%;
+}
+/* styles.css */
+
+.student-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 100px;
+}
+
+.student-details-table th,
+.student-details-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.student-details-table th {
+  background-color: #4a235a;
+  color: white;
+  font-weight: bold;
+}
+
+.student-details-table td {
+  background-color: #fff;
+}
+
+.student-details-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.student-details-table tbody tr:hover {
+  background-color: #e0e0e0;
+}
+.studentdetailcontainerr {
+  margin-left: 20%;
+}
+
+.container-StudentList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.teacherListContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14rem;
+}
